@@ -80,7 +80,7 @@ header {
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    border: 15px solid #444;
+    border: 10px solid #444;
     box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
 }
 
@@ -110,11 +110,12 @@ header {
 .hero-text p {
     text-align: justify;
     line-height: 1.6;
-    font-family: "cursive";
+    font-family:cursive;
     font-size: 1.3em;
     margin-top: 10px;
     font-style: oblique;
     color: black;
+    font-weight:lighter;
 }
 
 .hero-text h5 span {
@@ -125,7 +126,7 @@ header {
 .hero-text h1 {
     color: #483D8B;  
     font-size: 3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: cursive;
     position: relative;
     text-align: center;
     animation: colorChange 3s ease-in-out infinite;  
@@ -279,24 +280,43 @@ header {
         text-align: center;
     }
 }
-.explore{
-    background-color:rgb(172, 137, 149);
-    padding: 2%;
-    width: 20%;
-    color:#331c1c;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-size: 1.3rem;
-    border-radius: 10%;
-   
+.explore {
+    background-color: #9a76a9; 
+    color: #fff; 
+    border: none; 
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .explore:hover {
+    background-color: #763a90; 
+  }
+  
+  .explore a {
+    text-decoration: none; 
+    color: inherit;
+    display: inline-block; 
+    width: 100%; 
+    height: 100%; 
+  }
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-.explore:hover{
-    color: black;
-    background-color:rgb(211, 147, 170); ;
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
 }
-.explore a{
-    text-decoration: none;
-    color: brown;
-}
+
+
 
 
 
